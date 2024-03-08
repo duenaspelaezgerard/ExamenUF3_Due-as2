@@ -58,10 +58,10 @@ export const tablaPedido =  {
             console.log(fila)
             fila.cells[4].textContent = "SERVIDO"
 
-            const botonPendiente = e.target
-            botonPendiente.classList.remove('btn-outline-warning')
-            botonPendiente.classList.add('btn-outline-success')
-            botonPendiente.innerHTML = 'Pedido servido'
+            const btnPendiente = e.target
+            btnPendiente.classList.remove('btn-outline-warning')
+            btnPendiente.classList.add('btn-outline-success')
+            btnPendiente.innerHTML = 'Pedido servido'
 
         }
     }
