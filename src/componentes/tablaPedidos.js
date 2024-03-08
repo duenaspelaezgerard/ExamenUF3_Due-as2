@@ -57,9 +57,11 @@ export const tablaPedido =  {
             const fila = e.target.closest('tr') //FILA TENGO EL TR DONDE HE CLICADO
             console.log(fila)
             fila.cells[4].textContent = "SERVIDO"
-            
-            
-            // document.querySelector('#btnPendiente') = "Pedido Resuelto" 
+
+            const botonPendiente = e.target
+            botonPendiente.classList.remove('btn-outline-warning')
+            botonPendiente.classList.add('btn-outline-success')
+            botonPendiente.innerHTML = 'Pedido servido'
 
         }
     }
